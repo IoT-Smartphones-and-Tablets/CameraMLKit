@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCameraSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="OPEN CAMERA SIMPLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCameraTextRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="OPEN CAMERA&#10;WITH TEXT RECOGNITION"
+        app:layout_constraintEnd_toEndOf="@+id/btnCameraSimple"
+        app:layout_constraintStart_toStartOf="@+id/btnCameraSimple"
+        app:layout_constraintTop_toBottomOf="@+id/btnCameraSimple" />
+
+    <Button
+        android:id="@+id/btnImageLabeling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="62dp"
+        android:text="OPEN CAMERA&#10;WITH IMAGE LABELING"
+        app:layout_constraintEnd_toEndOf="@+id/btnCameraTextRec"
+        app:layout_constraintStart_toStartOf="@+id/btnCameraTextRec"
+        app:layout_constraintTop_toBottomOf="@+id/btnCameraTextRec" />
+
+    <Button
+        android:id="@+id/btnCameraObjDetec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:text="OPEN CAMERA&#10;WITH OBJECT DETECTION"
+        app:layout_constraintEnd_toEndOf="@+id/btnCameraTextRec"
+        app:layout_constraintStart_toStartOf="@+id/btnCameraTextRec"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageLabeling" />
+
+    <Button
+        android:id="@+id/btnCameraMyObjDetec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:text="OPEN CAMERA WITH&#10; CUSTOM OBJECT DETECTION"
+        app:layout_constraintEnd_toEndOf="@+id/btnCameraTextRec"
+        app:layout_constraintStart_toStartOf="@+id/btnCameraTextRec"
+        app:layout_constraintTop_toBottomOf="@+id/btnCameraObjDetec" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
